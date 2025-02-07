@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35004.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForexTransactions.API", "ForexTransactions\ForexTransactions.API.csproj", "{7E9FA823-FE98-4673-9AC2-3F881FB8B96C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{295255AF-B89B-45D5-9A0E-2CAD3447F7FC} = {295255AF-B89B-45D5-9A0E-2CAD3447F7FC}
+		{EC917D26-7B76-4306-A4D3-2A059A0EAC6D} = {EC917D26-7B76-4306-A4D3-2A059A0EAC6D}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BL", "BL", "{54DFAC40-04DB-4464-8ABE-729592D8AAE0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{65E08EB4-A66B-4E4C-A67F-0DF3ABC333A8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{CD9949B2-A300-4AD9-B710-F3B9BB6A6E33}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{FE8AC60C-9C02-4454-BAF0-CD5E5AA93D04}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForexTransactions.DAL", "ForexTransactions.DAL\ForexTransactions.DAL.csproj", "{E73CB75F-F86E-4C63-BB02-80B32C7C292C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForexTransactions.BL", "ForexTransactions.BL\ForexTransactions.BL.csproj", "{295255AF-B89B-45D5-9A0E-2CAD3447F7FC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E73CB75F-F86E-4C63-BB02-80B32C7C292C} = {E73CB75F-F86E-4C63-BB02-80B32C7C292C}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForexTransactions.VM", "ForexTransactions.VM\ForexTransactions.VM.csproj", "{EC917D26-7B76-4306-A4D3-2A059A0EAC6D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E9FA823-FE98-4673-9AC2-3F881FB8B96C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E9FA823-FE98-4673-9AC2-3F881FB8B96C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E9FA823-FE98-4673-9AC2-3F881FB8B96C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E9FA823-FE98-4673-9AC2-3F881FB8B96C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E73CB75F-F86E-4C63-BB02-80B32C7C292C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E73CB75F-F86E-4C63-BB02-80B32C7C292C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E73CB75F-F86E-4C63-BB02-80B32C7C292C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E73CB75F-F86E-4C63-BB02-80B32C7C292C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{295255AF-B89B-45D5-9A0E-2CAD3447F7FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{295255AF-B89B-45D5-9A0E-2CAD3447F7FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{295255AF-B89B-45D5-9A0E-2CAD3447F7FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{295255AF-B89B-45D5-9A0E-2CAD3447F7FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC917D26-7B76-4306-A4D3-2A059A0EAC6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC917D26-7B76-4306-A4D3-2A059A0EAC6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC917D26-7B76-4306-A4D3-2A059A0EAC6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC917D26-7B76-4306-A4D3-2A059A0EAC6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7E9FA823-FE98-4673-9AC2-3F881FB8B96C} = {65E08EB4-A66B-4E4C-A67F-0DF3ABC333A8}
+		{E73CB75F-F86E-4C63-BB02-80B32C7C292C} = {CD9949B2-A300-4AD9-B710-F3B9BB6A6E33}
+		{295255AF-B89B-45D5-9A0E-2CAD3447F7FC} = {54DFAC40-04DB-4464-8ABE-729592D8AAE0}
+		{EC917D26-7B76-4306-A4D3-2A059A0EAC6D} = {FE8AC60C-9C02-4454-BAF0-CD5E5AA93D04}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5DDC8E24-DDA9-4E39-BC8C-878F3223B570}
+	EndGlobalSection
+EndGlobal
